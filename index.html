@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head><link rel= "stylesheet" href="styles.css">
+</head>
+  
+<body>
+    
+  <div class="container">
+    <header>
+      <h1 id="title" class="text-center">KoTiCo Survey Form</h1>
+      <p id="description" class= "description text-center" text-center>Thanks a lot for taking the time to help us improve our product</p>
+    </header>
+
+  <form id="survey-form">
+      
+      <div class="form-group">
+        <label id="name-label" for="name">Name</label>
+        <input type="text" name="name" id="name" placeholder="Enter your name" required></input>
+      </div>
+
+      <div class="form-group">
+        <label id="email-label" for="email">Email</label>
+        <input type="email" id="email" placeholder="Enter your email" required></input>
+      </div>
+      
+      <div class="form-group">
+        <label id="number-label" for="age">Age <small>(Optional)</small></label>
+        <input type="number" name="age" id="number" min="12" max="120" placeholder="Enter your age"></input>
+      </div>
+      
+      <div class="form-group">
+        <p>What position do you play?</p>
+        <select id="dropdown" name="role" >
+          <option disabled selected value>Select your position</option>
+          <option value ="Goalkeeper">Goalkeeper</option>
+          <option value ="Defender">Defender</option>
+          <option value ="Midfielder">Midfielder</option>
+          <option value ="Attacker">Attacker</option>
+          <option value ="None/other">None</option>
+          <option value ="I prefer not to tell">I prefer not to tell</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <p>Would you recommend KoTiCo to friends?</p>
+          <label><input name="user-recommend" value="absolutely" type="radio" checked>Absolutely</label>
+          <label><input name="user-recommend" value="probably" type="radio">Probably</label>
+          <label><input name="user-recommend" value="not-sure" type="radio">Not sure</label>
+      </div>
+
+      <div class="form-group">
+        <p>What would you like to improve? <small>(Check all that apply)</small></p>
+          <label><input type="checkbox" value="Tackling"></input>Tackling</labeL>
+          <label><input type="checkbox" value="Shooting"></input>Shooting</labeL>
+          <label><input type="checkbox" value="Passing"></input>Passing</labeL>
+          <label><input type="checkbox" value="Heading"></input>Heading</labeL>
+          <label><input type="checkbox" value="Goalkeeping"></input>Goalkeeping</labeL>
+      </div>
+
+      <div class="form-group">
+        <p>Any comments or suggestions for improvement?</p>
+        <textarea id="comments" class="input-textarea" name="comment" rows="5" cols="3" placeholder="Enter your comment here"></textarea>
+      </div>
+
+      <div class="form-group">
+        <button type="submit" submit id="submit">Submit</button>
+      </div>
+    
+    </form>
+    </div>
+  </body>
+
+</html>
